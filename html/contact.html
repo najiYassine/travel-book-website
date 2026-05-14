@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="icon" type="image/png" href="../images/favicon/fav.png"
+            sizes="192x192">
+        <link rel="icon" type="image/svg+xml" href="../images/favicon/fav.svg">
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo">
+                <a class="logo-link" href="index.html">
+                    <img src="../images/icons/full-logo.png"
+                        alt="Logo Skylane">
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="article.html">Catégories</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-buttons">
+                <a href="inner_html/login.html"><img
+                        src="../images/icons/user-round-key.png"
+                        alt="Compte"></a>
+                <button id="bouton-theme">
+                    <svg class="light-icon"
+                        xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px">
+                        <path
+                            d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                    </svg>
+                    <svg class="dark-icon"
+                        xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px">
+                        <path
+                            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div class="all-content-body">
+            <h1>Nous aimerions vous entendre</h1>
+
+            <p>Envoyez-nous vos retours et évaluez notre service</p>
+        </div>
+
+        <div class="container">
+            <div class="info">
+                <img src="../images/pictures/support.png" />
+
+                <h2>Coordonnées de contact</h2>
+
+                <p>📞 Téléphone : +212 600000000</p>
+
+                <p>📧 Email : support@example.com</p>
+
+                <p>📍 Adresse : Temara, Maroc</p>
+
+                <p>Votre avis nous aide à améliorer nos services.</p>
+            </div>
+
+            <div class="form-box">
+                <h2>Nous contacter</h2>
+
+                <form id="contactForm">
+                    <div class="inputs_box">
+                        <label>Nom d'utilisateur</label>
+                        <input type="text" id="username" required />
+                    </div>
+
+                    <div class="inputs_box">
+                        <label>Email</label>
+                        <input type="email" id="email" required />
+                    </div>
+
+                    <div class="inputs_box">
+                        <label>Évaluez notre service</label>
+
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rate"
+                                value="5" />
+                            <label for="star5">★</label>
+
+                            <input type="radio" id="star4" name="rate"
+                                value="4" />
+                            <label for="star4">★</label>
+
+                            <input type="radio" id="star3" name="rate"
+                                value="3" />
+                            <label for="star3">★</label>
+
+                            <input type="radio" id="star2" name="rate"
+                                value="2" />
+                            <label for="star2">★</label>
+
+                            <input type="radio" id="star1" name="rate"
+                                value="1" />
+                            <label for="star1">★</label>
+                        </div>
+                    </div>
+
+                    <div class="inputs_box">
+                        <label>Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+
+                    <button type="submit">Envoyer le message</button>
+
+                    <div class="success" id="successMsg"></div>
+                </form>
+            </div>
+        </div>
+        <footer class="pied">
+            <p>© 2026 Skylane</p>
+        </footer>
+        <script src="../js/main.js"></script>
+        <script src="../js/contact.js"></script>
+    </body>
+</html>

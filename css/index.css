@@ -1,0 +1,230 @@
+:root {
+    --color-bg:           #f0f2fa;
+    --color-bg-secondary: #e2e6f3;
+    --color-bg-soft:      #d4d9ea;
+
+    --color-text:         #2a2f45;
+    --color-text-muted:   #5c6478;
+    --color-heading:      #161a2e;
+    --color-heading-2:    #4a5682;
+
+    --color-link:         #5568a8;
+    --color-link-hover:   #3a4770;
+
+    --color-btn:          #5d6bae;
+    --color-btn-hover:    #495896;
+    --color-btn-text:     #ffffff;
+
+    --color-input-bg:     #ffffff;
+    --color-input-text:   #2a2f45;
+    --color-input-border: #b8c0d8;
+    --color-input-focus:  #5d6bae;
+
+    --color-border:       #b8c0d8;
+}
+
+[data-theme="dark"] {
+    --color-bg:           #131725;
+    --color-bg-secondary: #1a1f34;
+    --color-bg-soft:      #232942;
+
+    --color-text:         #d8dce8;
+    --color-text-muted:   #8e95ac;
+    --color-heading:      #f4f5fb;
+    --color-heading-2:    #b4bad4;
+
+    --color-link:         #9aacf0;
+    --color-link-hover:   #e4e7ff;
+
+    --color-btn:          #6b7fcf;
+    --color-btn-hover:    #8d9ce0;
+    --color-btn-text:     #ffffff;
+
+    --color-input-bg:     #1c2135;
+    --color-input-text:   #f4f5fb;
+    --color-input-border: #3a4158;
+    --color-input-focus:  #8b9dff;
+
+    --color-border:       #3a4158;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.page {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.accueil {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.texte {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texte h1 {
+    font-size: 55px;
+}
+
+.texte p {
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.boutons {
+    display: flex;
+    gap: 15px;
+}
+
+.boutons button {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--color-btn);
+    color: var(--color-btn-text);
+}
+
+.bouton-simple {
+    background-color: transparent;
+    border: 1px solid var(--color-border) !important;
+    color: var(--color-text);
+}
+
+.boutons button:hover {
+    background-color: var(--color-btn-hover);
+}
+
+.image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.servicessection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.service {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service {
+    background-color: var(--color-bg-secondary);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service p {
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
+
+.lieux {
+    margin-top: 80px;
+}
+
+.lieux h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.cartes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.carte {
+    flex: 1;
+    min-width: 250px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    padding: 25px;
+}
+.carte h2 {
+    color: white;
+    font-size: 32px;
+}
+.paris {
+    background-image: url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop");
+}
+.tokyo {
+    background-image: url("https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop");
+}
+.dubai {
+    background-image: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop");
+}
+.rome {
+    background-image: url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1200&auto=format&fit=crop");
+}
+.apropos {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.image-apropos img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.texte-apropos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texte-apropos p {
+    line-height: 1.7;
+}
+
+.pied {
+    padding: 20px 5%;
+    background-color: var(--color-bg-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pied p {
+    text-align: center;
+    white-space: nowrap;
+}
+

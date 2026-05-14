@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catégories</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/article.css">
+        <link rel="icon" type="image/png" href="../images/favicon/fav.png"
+            sizes="192x192">
+        <link rel="icon" type="image/svg+xml" href="../images/favicon/fav.svg">
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo">
+                <a class="logo-link" href="index.html">
+                    <img src="../images/icons/full-logo.png" alt="Logo Skylane">
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="article.html">Catégories</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-buttons">
+
+                <a href="inner_html/login.html"><img
+                        src="../images/icons/user-round-key.png"
+                        alt="Compte"></a>
+                <button id="bouton-theme">
+                    <svg class="light-icon" xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960" width="24px">
+                        <path
+                            d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                    </svg>
+                    <svg class="dark-icon" xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960" width="24px">
+                        <path
+                            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <main class="contenu">
+            <aside class="aside">
+                <h2>ajuster votre voyage</h2>
+                <div class="groupe">
+                    <h3>Type de vol</h3>
+                    <label for="vol-aller-simple">
+                        <input id="vol-aller-simple" type="checkbox">
+                        Aller simple
+                    </label>
+                    <label for="vol-aller-retour">
+                        <input id="vol-aller-retour" type="checkbox">
+                        Aller-retour
+                    </label>
+                    <label for="vol-multi-destinations">
+                        <input id="vol-multi-destinations" type="checkbox">
+                        Multi-destinations
+                    </label>
+                </div>
+                <div class="groupe">
+                    <h3>Classe</h3>
+                    <label for="classe-economique">
+                        <input id="classe-economique" type="checkbox">
+                        Économique
+                    </label>
+                    <label for="classe-business">
+                        <input id="classe-business" type="checkbox">
+                        Business
+                    </label>
+                    <label for="classe-premiere">
+                        <input id="classe-premiere" type="checkbox">
+                        Première classe
+                    </label>
+                </div>
+                <div class="groupe">
+                    <h3>Prix</h3>
+                    <label for="prix-minimum">
+                        Prix minimum
+                        <input id="prix-minimum" type="number" placeholder="0">
+                    </label>
+                    <label for="prix-maximum">
+                        Prix maximum
+                        <input id="prix-maximum" type="number"
+                            placeholder="10000">
+                    </label>
+                </div>
+                <div class="groupe">
+                    <h3>Évaluation</h3>
+                    <label for="evaluation-5-etoiles">
+                        <input id="evaluation-5-etoiles" type="checkbox">
+                        5 étoiles
+                    </label>
+                    <label for="evaluation-4-etoiles">
+                        <input id="evaluation-4-etoiles" type="checkbox">
+                        4 étoiles
+                    </label>
+                    <label for="evaluation-3-etoiles">
+                        <input id="evaluation-3-etoiles" type="checkbox">
+                        3 étoiles
+                    </label>
+                </div>
+                <div class="groupe">
+                    <h3>Hôtel</h3>
+                    <label for="hotel-inclus">
+                        <input id="hotel-inclus" type="checkbox">
+                        Hôtel inclus
+                    </label>
+                    <label for="hotel-sans">
+                        <input id="hotel-sans" type="checkbox">
+                        Sans hôtel
+                    </label>
+                    <label for="hotel-petit-dejeuner">
+                        <input id="hotel-petit-dejeuner" type="checkbox">
+                        Petit déjeuner inclus
+                    </label>
+                </div>
+                <div class="groupe">
+                    <h3>Continent</h3>
+                    <label for="continent-europe">
+                        <input id="continent-europe" type="checkbox">
+                        Europe
+                    </label>
+                    <label for="continent-asie">
+                        <input id="continent-asie" type="checkbox">
+                        Asie
+                    </label>
+                    <label for="continent-afrique">
+                        <input id="continent-afrique" type="checkbox">
+                        Afrique
+                    </label>
+                    <label for="continent-amerique">
+                        <input id="continent-amerique" type="checkbox">
+                        Amérique
+                    </label>
+                    <label for="continent-oceanie">
+                        <input id="continent-oceanie" type="checkbox">
+                        Océanie
+                    </label>
+                </div>
+                <div class="groupe">
+                    <h3>Offres</h3>
+                    <label for="offre-reduction">
+                        <input id="offre-reduction" type="checkbox">
+                        Réduction incluse
+                    </label>
+                    <label for="offre-sans-reduction">
+                        <input id="offre-sans-reduction" type="checkbox">
+                        Sans réduction
+                    </label>
+                </div>
+            </aside>
+            <section id="section" class="section">
+            </section>
+        </main>
+        <div id="iframe-reservation">
+        </div>
+        <footer class="pied">
+            <p>© 2026 Skylane</p>
+        </footer>
+        <script src="../js/main.js"></script>
+        <script src="../js/data.js"></script>
+        <script src="../js/article.js"></script>
+    </body>
+</html>

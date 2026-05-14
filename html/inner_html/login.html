@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/inner-css/login.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../images/favicon/fav.png"
+      sizes="192x192"
+    />
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon/fav.svg" />
+  </head>
+  <body class="page-connexion">
+    <nav class="nav">
+      <div class="logo">
+        <a class="logo-link" href="../index.html">
+          <img src="../../images/icons/full-logo.png" alt="Logo Skylane" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="../index.html">Accueil</a>
+        <a href="../article.html">Catégories</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../about.html">À propos</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div class="nav-buttons">
+        <a href="login.html"
+          ><img src="../../images/icons/user-round-key.png" alt="Compte"
+        /></a>
+        <button type="button" id="bouton-theme">
+          <svg
+            class="light-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+          >
+            <path
+              d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+            />
+          </svg>
+          <svg
+            class="dark-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+          >
+            <path
+              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <main class="milieu">
+      <section class="bloc">
+        <h1 class="titre">Connexion</h1>
+        <p class="texte">
+          Saisissez votre email ou nom d'utilisateur et votre mot de passe pour
+          continuer.
+        </p>
+
+        <div class="formulaire">
+          <label class="champ">
+            <span class="etiquette">Email ou nom d'utilisateur</span>
+            <input
+              id="email-input"
+              type="text"
+              name="email"
+              placeholder="••••••••"
+              class="saisie"
+            />
+          </label>
+          <div class="userinfo" id="userinfo">
+            <ul>
+              <li>nom d'utilisateur ou email est incorrect</li>
+            </ul>
+          </div>
+
+          <label class="champ">
+            <span class="etiquette">Mot de passe</span>
+            <input
+              id="password-input"
+              type="password"
+              name="password"
+              placeholder="••••••••"
+              class="saisie"
+            />
+          </label>
+          <div class="userpassword" id="userpassword">
+            <ul>
+              <li>mot de passe incorrect</li>
+            </ul>
+          </div>
+
+          <div class="ligne">
+            <label class="souvenir">
+              <input type="checkbox" name="remember" class="case" />
+              <span>Se souvenir de moi</span>
+            </label>
+            <a href="#" class="oubli">Mot de passe oublié ?</a>
+          </div>
+
+          <button type="button" class="envoi" id="envoi">Se connecter</button>
+        </div>
+
+        <p class="pied">
+          Pas encore de compte ? <a href="registre.html">Créer un compte</a>
+        </p>
+      </section>
+    </main>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/inner-js/login.js"></script>
+  </body>
+</html>

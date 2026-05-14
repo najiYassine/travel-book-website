@@ -1,0 +1,144 @@
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.section-partage {
+    width: 100%;
+    min-height: 45vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+}
+
+.superposition {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.superposition .texte {
+    text-align: center;
+    max-width: 900px;
+}
+
+.superposition h1 {
+    color: var(--color-heading);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    margin-bottom: 20px;
+}
+
+.superposition p {
+    color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.blog-content {
+    display: grid;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.formulaire-avis {
+    background-color: var(--color-bg-secondary);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+    display: grid;
+    gap: 20px;
+}
+
+.formulaire-avis h2 {
+    margin: 0;
+    color: var(--color-heading);
+}
+
+.formulaire-avis input,
+.formulaire-avis textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    background-color: var(--color-input-bg);
+    color: var(--color-input-text);
+    font-size: 1rem;
+}
+
+.formulaire-avis textarea {
+    min-height: 180px;
+    resize: none;
+}
+
+.formulaire-avis button {
+    width: fit-content;
+    padding: 14px 28px;
+    background-color: var(--color-btn);
+    color: var(--color-btn-text);
+    border: none;
+    border-radius: 14px;
+   
+    
+}
+
+.formulaire-avis button:hover {
+    background-color: var(--color-btn-hover);
+}
+
+.conteneur-avis {
+    display: grid;
+    gap: 24px;
+}
+
+.carte-avis {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.carte-avis img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.carte-avis .content {
+    padding: 24px;
+}
+
+.carte-avis h2 {
+    margin: 0 0 10px;
+    color: var(--color-heading);
+}
+
+.carte-avis p {
+    margin: 0;
+    color: var(--color-text-muted);
+    line-height: 1.75;
+}
+
+.pied {
+    padding: 20px 5%;
+    background-color: var(--color-bg-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pied p {
+    text-align: center;
+    white-space: nowrap;
+}

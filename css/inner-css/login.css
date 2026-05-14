@@ -1,0 +1,156 @@
+.page-connexion {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.milieu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px 48px;
+  min-height: calc(100vh - 70px);
+}
+
+.bloc {
+  width: 100%;
+  max-width: 420px;
+  padding: 32px 32px 36px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+}
+
+.titre {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-heading);
+  letter-spacing: -1px;
+}
+
+.texte {
+  margin: 0 0 28px;
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--color-text-muted);
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.etiquette {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-heading-2);
+}
+
+.saisie {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  color: var(--color-input-text);
+  background-color: var(--color-input-bg);
+  border: 1px solid var(--color-input-border);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.saisie::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.85;
+}
+
+.saisie:hover {
+  border-color: var(--color-link);
+}
+
+.saisie:focus {
+  border-color: var(--color-input-focus);
+}
+
+.ligne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.souvenir {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.case {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-btn);
+  cursor: pointer;
+}
+
+.oubli {
+  font-size: 14px;
+  padding: 0;
+}
+
+.envoi {
+  margin-top: 4px;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-btn-text);
+  background-color: var(--color-btn);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.envoi:hover {
+  background-color: var(--color-btn-hover);
+}
+
+.envoi:focus-visible {
+  outline: 2px solid var(--color-input-focus);
+  outline-offset: 2px;
+}
+
+.pied {
+  margin: 28px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.pied a {
+  font-size: 14px;
+  padding: 0;
+  font-weight: 600;
+}
+
+.bloc a:hover {
+  background-color: transparent;
+}
+.userinfo{
+  display: none;
+}
+.userpassword{
+  display: none;
+} 

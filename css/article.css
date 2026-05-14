@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+.contenu {
+  width: 95%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  height: auto;
+}
+
+h2 {
+  color: var(--color-text);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.groupe {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 5px;
+}
+
+.groupe label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.groupe input[type="number"] {
+  width: 50%;
+  height: 100%;
+}
+
+.filtre {
+  height: 50px;
+  background-color: var(--color-bg-secondary);
+}
+
+.section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 10px;
+
+
+
+}
+
+.carte-voyage {
+  width: 220px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.carte-voyage img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.carte-voyage .corps {
+  padding: 12px;
+}
+
+.carte-voyage .destination {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 4px;
+  color: var(--color-heading);
+}
+
+.carte-voyage .prix {
+  font-size: 14px;
+  color: var(--color-link);
+  margin: 0 0 4px;
+}
+
+.carte-voyage .badge-classe {
+  font-size: 11px;
+  padding: 3px 8px;
+  background: var(--color-bg-secondary);
+  color: var(--color-text-muted);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.carte-voyage .btn-confirmer {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-btn);
+  color: var(--color-btn-text);
+  cursor: pointer;
+}
+
+.carte-voyage .btn-confirmer:hover {
+  background: var(--color-btn-hover);
+}
+
+#iframe-reservation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ligne-reservation{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: var(--color-bg-secondary);
+}
+
+.ligne-reservation p{
+    margin: 0;
+    font-size: 16px;
+}
+
+.ligne-reservation button{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    color: var(--color-btn);
+    background-color: var(--color-bg-secondary);
+    color: var(--color-btn);
+  
+}
+
+.ligne-reservation button:hover{
+    opacity: 0.8;
+}
+
+.pied {
+  padding: 20px 5%;
+  background-color: var(--color-bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pied p {
+  text-align: center;
+  white-space: nowrap;
+}
