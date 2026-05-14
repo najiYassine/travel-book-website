@@ -105,8 +105,14 @@ body {
 .carte-avis {
     background-color: var(--color-bg-secondary);
     border: 1px solid var(--color-border);
-    border-radius: 24px;
+    border-radius: 16px;
     overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.carte-avis:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
 }
 
 .carte-avis img {
@@ -117,17 +123,48 @@ body {
 
 .carte-avis .content {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.carte-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 .carte-avis h2 {
-    margin: 0 0 10px;
+    margin: 0;
     color: var(--color-heading);
+    flex: 1;
+    word-break: break-word;
 }
 
 .carte-avis p {
     margin: 0;
     color: var(--color-text-muted);
     line-height: 1.75;
+    word-wrap: break-word;
+}
+
+.btn-delete {
+    background-color: var(--color-btn);
+    color: var(--color-btn-text);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.btn-delete:hover {
+    background-color: var(--color-btn-hover);
 }
 
 .pied {

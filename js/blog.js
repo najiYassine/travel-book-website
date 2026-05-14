@@ -15,13 +15,24 @@ function collectdata() {
 
 function afficherAvis() {
     let txt = "";
-    avisdata.forEach(function(item) {
+    avisdata.forEach(function(item, index) {
         txt += `
             <div class="carte-avis">
-                <h2>${item.titre}</h2>
-                <p>${item.avis}</p>
+                <div class="content">
+                    <div class="carte-header">
+                        <h2>${item.titre}</h2>
+                        <button class="btn-delete" onclick="supprimerAvis(${index})">Supprimer</button>
+                    </div>
+                    <p>${item.avis}</p>
+                </div>
             </div>
         `;
     });
     conteneurAvis.innerHTML = txt;
+}
+
+function supprimerAvis(index) {
+    avisdata.splice(index, 1);
+    localStorage.setItem("avisdata", JSON.stringify(avisdata));
+    afficherAvis();
 }
