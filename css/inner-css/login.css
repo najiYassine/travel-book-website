@@ -79,36 +79,6 @@
 .saisie:focus {
   border-color: var(--color-input-focus);
 }
-
-.ligne {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.souvenir {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: var(--color-text);
-  cursor: pointer;
-}
-
-.case {
-  width: 16px;
-  height: 16px;
-  accent-color: var(--color-btn);
-  cursor: pointer;
-}
-
-.oubli {
-  font-size: 14px;
-  padding: 0;
-}
-
 .envoi {
   margin-top: 4px;
   width: 100%;
