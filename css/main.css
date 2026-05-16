@@ -97,6 +97,7 @@ a:hover {
   background-color: var(--color-bg);
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 
 .logo {
