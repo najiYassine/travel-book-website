@@ -6,17 +6,22 @@
 
 body {
   background-color: var(--color-bg);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contenu {
   width: 95%;
   margin: 40px auto;
-  display: grid;
-  grid-template-columns: 250px 1fr;
+
+  display: flex;               /* changed */
   gap: 30px;
+  align-items: flex-start;     /* added */
 }
 
 .aside {
+  width: 250px;                /* added */
+  flex-shrink: 0;              /* added */
+
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -57,13 +62,13 @@ h2 {
 }
 
 .section {
+  flex: 1;                     /* added */
+
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  align-content: flex-start;   /* added */
   gap: 10px;
-
-
-
 }
 
 .carte-voyage {
@@ -121,44 +126,42 @@ h2 {
   background: var(--color-btn-hover);
 }
 
-#iframe-reservation{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+#iframe-reservation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.ligne-reservation{
-    width: 700px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    border: 1px solid #dcdcdc;
-    border-radius: 10px;
-    background-color: var(--color-bg-secondary);
+.ligne-reservation {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  background-color: var(--color-bg-secondary);
 }
 
-.ligne-reservation p{
-    margin: 0;
-    font-size: 16px;
+.ligne-reservation p {
+  margin: 0;
+  font-size: 16px;
 }
 
-.ligne-reservation button{
-    padding: 8px 16px;
-    border: none;
-    border-radius: 6px;
-    color: var(--color-btn);
-    background-color: var(--color-bg-secondary);
-    color: var(--color-btn);
-  
+.ligne-reservation button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-btn);
 }
 
-.ligne-reservation button:hover{
-    opacity: 0.8;
+.ligne-reservation button:hover {
+  opacity: 0.8;
 }
 
 .pied {

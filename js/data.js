@@ -10,7 +10,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Paris.jpg"
+    picture: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: false,
     reduction: false,
-    picture: "../images/pictures/Tokyo.jpg"
+    picture: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800"
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Dubai.jpg"
+    picture: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800"
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const voyages = [
     hotel: false,
     petitDejeuner: false,
     reduction: false,
-    picture: "../images/pictures/Rome.jpg"
+    picture: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800"
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Marrakech.jpg"
+    picture: "https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=800"
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: false,
     reduction: false,
-    picture: "../images/pictures/New.jpg"
+    picture: "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=800"
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ const voyages = [
     hotel: false,
     petitDejeuner: false,
     reduction: true,
-    picture: "../images/pictures/Sydney.jpg"
+    picture: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800"
   },
   {
     id: 8,
@@ -101,7 +101,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Bangkok.jpg"
+    picture: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800"
   },
   {
     id: 9,
@@ -114,7 +114,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: false,
-    picture: "../images/pictures/London.jpg"
+    picture: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800"
   },
   {
     id: 10,
@@ -127,7 +127,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: false,
     reduction: true,
-    picture: "../images/pictures/Istanbul.jpg"
+    picture: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800"
   },
   {
     id: 11,
@@ -140,7 +140,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Barcelona.jpg"
+    picture: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800"
   },
   {
     id: 12,
@@ -153,7 +153,7 @@ const voyages = [
     hotel: false,
     petitDejeuner: false,
     reduction: false,
-    picture: "../images/pictures/Cairo.jpg"
+    picture: "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=800"
   },
   {
     id: 13,
@@ -166,7 +166,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Rio.jpg"
+    picture: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800"
   },
   {
     id: 14,
@@ -179,7 +179,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: false,
-    picture: "../images/pictures/Seoul.jpg"
+    picture: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800"
   },
   {
     id: 15,
@@ -192,7 +192,7 @@ const voyages = [
     hotel: false,
     petitDejeuner: false,
     reduction: true,
-    picture: "../images/pictures/Athens.jpg"
+    picture: "https://images.unsplash.com/photo-1503152394-c571994fd383?w=800"
   },
   {
     id: 16,
@@ -205,7 +205,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: false,
     reduction: true,
-    picture: "../images/pictures/Berlin.jpg"
+    picture: "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=800"
   },
   {
     id: 17,
@@ -218,7 +218,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: false,
-    picture: "../images/pictures/Beijing.jpg"
+    picture: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800"
   },
   {
     id: 18,
@@ -231,7 +231,7 @@ const voyages = [
     hotel: false,
     petitDejeuner: false,
     reduction: true,
-    picture: "../images/pictures/Toronto.jpg"
+    picture: "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?w=800"
   },
   {
     id: 19,
@@ -244,7 +244,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Doha.jpg"
+    picture: "https://images.unsplash.com/photo-1578895101408-1a36b834405b?w=800"
   },
   {
     id: 20,
@@ -257,7 +257,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: false,
     reduction: true,
-    picture: "../images/pictures/Lisbon.jpg"
+    picture: "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=800"
   },
   {
     id: 21,
@@ -270,7 +270,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: false,
-    picture: "../images/pictures/Mexico.jpg"
+    picture: "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?w=800"
   },
   {
     id: 22,
@@ -283,7 +283,7 @@ const voyages = [
     hotel: false,
     petitDejeuner: false,
     reduction: true,
-    picture: "../images/pictures/Cape.jpg"
+    picture: "https://images.unsplash.com/photo-1576485375217-d6a95e34d043?w=800"
   },
   {
     id: 23,
@@ -296,7 +296,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Mumbai.jpg"
+    picture: "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=800"
   },
   {
     id: 24,
@@ -309,7 +309,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: false,
     reduction: false,
-    picture: "../images/pictures/Amsterdam.jpg"
+    picture: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=800"
   },
   {
     id: 25,
@@ -322,7 +322,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Los.jpg"
+    picture: "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?w=800"
   },
   {
     id: 26,
@@ -335,7 +335,7 @@ const voyages = [
     hotel: false,
     petitDejeuner: false,
     reduction: true,
-    picture: "../images/pictures/Casablanca.jpg"
+    picture: "https://images.unsplash.com/photo-1577147443647-81856d5151af?w=800"
   },
   {
     id: 27,
@@ -348,7 +348,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: false,
-    picture: "../images/pictures/Singapore.jpg"
+    picture: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800"
   },
   {
     id: 28,
@@ -361,7 +361,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: false,
     reduction: true,
-    picture: "../images/pictures/Prague.jpg"
+    picture: "https://images.unsplash.com/photo-1541849546-216549ae216d?w=800"
   },
   {
     id: 29,
@@ -374,7 +374,7 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Buenos.jpg"
+    picture: "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=800"
   },
   {
     id: 30,
@@ -387,9 +387,8 @@ const voyages = [
     hotel: true,
     petitDejeuner: true,
     reduction: true,
-    picture: "../images/pictures/Bali.jpg"
+    picture: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800"
   }
 ];
-
 localStorage.setItem('voyages', JSON.stringify(voyages));
 const dataAvis = JSON.parse(localStorage.getItem("avisdata"))

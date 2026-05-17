@@ -1,77 +1,78 @@
-*{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-        body{
-            background-color: var(--color-bg);
-        }
+body {
+    background-color: var(--color-bg);
+    font-family: Arial, Helvetica, sans-serif;
 
+}
 
-        .main{
-            width: 85%;
-            margin: 50px auto;
-            background-color: var(--color-bg-secondary);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.main {
+    width: 85%;
+    margin: 50px auto;
+    background-color: var(--color-bg-secondary);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 40px;
-        }
+.txt {
+    width: 50%;
+}
 
-        .txt{
-            width: 50%;
-        }
+.txt h1 {
+    font-size: 48px;
+    color: var(--color-heading);
+    margin-bottom: 20px;
+}
 
-        .txt h1{
-            font-size: 48px;
-            color: var(--color-heading);
-            margin-bottom: 20px;
-        }
+.txt p {
+    font-size: 19px;
+    line-height: 32px;
+    color: var(--color-text);
+    text-align: justify;
+}
 
-        .txt p{
-            font-size: 19px;
-            line-height: 32px;
-            color: var(--color-text);
-            text-align: justify;
-        }
+.image {
+    width: 50%;
+}
 
-        .image{
-            width: 50%;
-        }
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
 
-        .image img{
-            width: 100%;
-            border-radius: 10px;
-        }
+.mission {
+    width: 85%;
+    margin: auto;
+    background-color: var();
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    text-align: center;
+}
 
-        .mission{
-            width: 85%;
-            margin: auto;
-            background-color: var();
-            padding: 35px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin-bottom: 50px;
-            text-align: center;
-        }
+.mission h2 {
+    color: var(--color-heading-2);
+    margin-bottom: 20px;
+    font-size: 35px;
+}
 
-        .mission h2{
-            color: var(--color-heading-2);
-            margin-bottom: 20px;
-            font-size: 35px;
-        }
+.mission p {
+    color: var(--color-text);
+    font-size: 18px;
+    line-height: 30px;
+}
 
-        .mission p{
-            color: var(--color-text);
-            font-size: 18px;
-            line-height: 30px;
-        }
 .pied {
     padding: 20px 5%;
     background-color: var(--color-bg-secondary);

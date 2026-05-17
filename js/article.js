@@ -44,7 +44,7 @@ function afficherVoyages(data) {
           <span class="badge-classe">
             ${prod.classe}
           </span>
-          <button class="btn-confirmer" onclick=reserve(${prod.id})>
+          <button class="btn-confirmer" onclick="reserve(${prod.id})">
             Réserver
           </button>
         </div>
@@ -223,6 +223,8 @@ inputs.forEach(function (input) {
     input.addEventListener("input", filtrerVoyages);
 
 });
+
+
 function reserve(id){
 
     const prod = voyage.find(function(item){

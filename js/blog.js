@@ -4,15 +4,19 @@ const avisdata = JSON.parse(localStorage.getItem("avisdata")) || [];
 function collectdata() {
     const titleId = document.getElementById("titre").value;
     const textareaId = document.getElementById("avis").value;
-    const avisObject = {
+   if (titleId!="" && textareaId!=""){
+      const avisObject = {
         titre: titleId,
         avis: textareaId
     };
     avisdata.push(avisObject);
     localStorage.setItem("avisdata", JSON.stringify(avisdata));
     afficherAvis();
+   }else{
+    alert("remplir les champs")
+   }
+  
 }
-
 function afficherAvis() {
     let txt = "";
     avisdata.forEach(function(item, index) {

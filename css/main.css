@@ -1,51 +1,51 @@
 :root {
-  --color-bg:           #f0f2fa;
+  --color-bg: #f0f2fa;
   --color-bg-secondary: #e2e6f3;
-  --color-bg-soft:      #d4d9ea;
+  --color-bg-soft: #d4d9ea;
 
-  --color-text:         #2a2f45;
-  --color-text-muted:   #5c6478;
-  --color-heading:      #161a2e;
-  --color-heading-2:    #4a5682;
+  --color-text: #2a2f45;
+  --color-text-muted: #5c6478;
+  --color-heading: #161a2e;
+  --color-heading-2: #4a5682;
 
-  --color-link:         #5568a8;
-  --color-link-hover:   #3a4770;
+  --color-link: #5568a8;
+  --color-link-hover: #3a4770;
 
-  --color-btn:          #5d6bae;
-  --color-btn-hover:    #495896;
-  --color-btn-text:     #ffffff;
+  --color-btn: #5d6bae;
+  --color-btn-hover: #495896;
+  --color-btn-text: #ffffff;
 
-  --color-input-bg:     #ffffff;
-  --color-input-text:   #2a2f45;
+  --color-input-bg: #ffffff;
+  --color-input-text: #2a2f45;
   --color-input-border: #b8c0d8;
-  --color-input-focus:  #5d6bae;
+  --color-input-focus: #5d6bae;
 
-  --color-border:       #b8c0d8;
+  --color-border: #b8c0d8;
 }
 
 [data-theme="dark"] {
-  --color-bg:           #131725;
+  --color-bg: #131725;
   --color-bg-secondary: #1a1f34;
-  --color-bg-soft:      #232942;
+  --color-bg-soft: #232942;
 
-  --color-text:         #d8dce8;
-  --color-text-muted:   #8e95ac;
-  --color-heading:      #f4f5fb;
-  --color-heading-2:    #b4bad4;
+  --color-text: #d8dce8;
+  --color-text-muted: #8e95ac;
+  --color-heading: #f4f5fb;
+  --color-heading-2: #b4bad4;
 
-  --color-link:         #9aacf0;
-  --color-link-hover:   #e4e7ff;
+  --color-link: #9aacf0;
+  --color-link-hover: #e4e7ff;
 
-  --color-btn:          #6b7fcf;
-  --color-btn-hover:    #8d9ce0;
-  --color-btn-text:     #ffffff;
+  --color-btn: #6b7fcf;
+  --color-btn-hover: #8d9ce0;
+  --color-btn-text: #ffffff;
 
-  --color-input-bg:     #1c2135;
-  --color-input-text:   #f4f5fb;
+  --color-input-bg: #1c2135;
+  --color-input-text: #f4f5fb;
   --color-input-border: #3a4158;
-  --color-input-focus:  #8b9dff;
+  --color-input-focus: #8b9dff;
 
-  --color-border:       #3a4158;
+  --color-border: #3a4158;
 }
 
 *,
@@ -63,10 +63,13 @@ html {
   color-scheme: light;
   background-color: var(--color-bg);
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 html[data-theme="dark"] {
   color-scheme: dark;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -82,6 +85,7 @@ a {
   font-size: 20px;
   padding: 10px;
 }
+
 a:hover {
   color: var(--color-link-hover);
   background-color: var(--color-bg-soft);
@@ -97,7 +101,9 @@ a:hover {
   background-color: var(--color-bg);
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -213,6 +219,7 @@ html[data-theme="dark"] .nav-buttons a:focus-visible img {
 .nav-buttons button svg:nth-of-type(1) {
   display: none;
 }
+
 .nav-buttons button svg:nth-of-type(2) {
   display: block;
 }

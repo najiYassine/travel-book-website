@@ -1,173 +1,175 @@
 * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-      }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-      body {
-        background-color: var(--color-bg);
-      }
+body {
+  background-color: var(--color-bg);
+  font-family: Arial, Helvetica, sans-serif;
 
-      .all {
-        width: 100%;
-        height: 300px;
-        background: linear-gradient(to right, var(--color-link), var(--color-link-hover));
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+}
 
-    
-      .all-content-body {
-        width: 85%;
-        margin: 50px auto;
-        text-align: center;
-      }
+.all {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to right, var(--color-link), var(--color-link-hover));
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-      .all-content-body h1 {
-        font-size: 50px;
-        margin-bottom: 15px;
-        color: var(--color-heading);
-      }
 
-      .all-content-body p {
-        font-size: 22px;
-        color: var(--color-text);
-      }
+.all-content-body {
+  width: 85%;
+  margin: 50px auto;
+  text-align: center;
+}
 
-      .container {
-        width: 85%;
-        margin: 40px auto;
-        display: flex;
-        gap: 40px;
-      }
+.all-content-body h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: var(--color-heading);
+}
 
-      .info {
-        width: 50%;
-      }
+.all-content-body p {
+  font-size: 22px;
+  color: var(--color-text);
+}
 
-      .info img {
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 20px;
-      }
+.container {
+  width: 85%;
+  margin: 40px auto;
+  display: flex;
+  gap: 40px;
+}
 
-      .info h2 {
-        font-size: 35px;
-        margin-bottom: 20px;
-        color: var(--color-heading);
-      }
+.info {
+  width: 50%;
+}
 
-      .info p {
-        font-size: 18px;
-        margin-bottom: 15px;
-        line-height: 30px;
-        color: var(--color-text);
-      }
+.info img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
-      .form-box {
-        width: 50%;
-        background-color: var(--color-bg-secondary);
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
+.info h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: var(--color-heading);
+}
 
-      .form-box h2 {
-        text-align: center;
-        margin-bottom: 25px;
-        color: var(--color-heading);
-        font-size: 35px;
-      }
+.info p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  color: var(--color-text);
+}
 
-      .inputs_box {
-        margin-bottom: 20px;
-      }
+.form-box {
+  width: 50%;
+  background-color: var(--color-bg-secondary);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-      .inputs_box label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
-        color: var(--color-text);
-      }
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--color-heading);
+  font-size: 35px;
+}
 
-      .inputs_box input,
-      .inputs_box textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid var(--color-input-border);
-        border-radius: 5px;
-        font-size: 16px;
-        background-color: var(--color-input-bg);
-        color: var(--color-input-text);
-      }
+.inputs_box {
+  margin-bottom: 20px;
+}
 
-      textarea {
-        height: 120px;
-        resize: none;
-      }
+.inputs_box label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--color-text);
+}
 
-      .rating {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: start;
-        gap: 5px;
-      }
+.inputs_box input,
+.inputs_box textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-input-border);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: var(--color-input-bg);
+  color: var(--color-input-text);
+}
 
-      .rating input {
-        display: none;
-      }
+textarea {
+  height: 120px;
+  resize: none;
+}
 
-      .rating label {
-        font-size: 35px;
-        color: var(--color-text-muted);
-        cursor: pointer;
-        transition: 0.3s;
-      }
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  gap: 5px;
+}
 
-      .rating label:hover,
-      .rating label:hover ~ label {
-        color: var(--color-link);
-      }
+.rating input {
+  display: none;
+}
 
-      .rating input:checked ~ label {
-        color: var(--color-link);
-      }
+.rating label {
+  font-size: 35px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-      button {
-        width: 100%;
-        padding: 14px;
-        background-color: var(--color-btn);
-        color: var(--color-btn-text);
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        cursor: pointer;
-      }
+.rating label:hover,
+.rating label:hover~label {
+  color: var(--color-link);
+}
 
-      button:hover {
-        background-color: var(--color-btn-hover);
-      }
+.rating input:checked~label {
+  color: var(--color-link);
+}
 
-      .success {
-        margin-top: 15px;
-        text-align: center;
-        color: var(--color-text);
-        font-weight: bold;
-      }
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--color-btn);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
-      .pied {
-        padding: 20px 5%;
-        background-color: var(--color-bg-secondary);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+button:hover {
+  background-color: var(--color-btn-hover);
+}
 
-      .pied p {
-        text-align: center;
-        white-space: nowrap;
-      }
+.success {
+  margin-top: 15px;
+  text-align: center;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.pied {
+  padding: 20px 5%;
+  background-color: var(--color-bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pied p {
+  text-align: center;
+  white-space: nowrap;
+}
