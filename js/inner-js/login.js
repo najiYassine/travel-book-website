@@ -1,4 +1,5 @@
 const btn1 = document.getElementById("envoi");
+
 function formulairevalidation() {
   const data = JSON.parse(localStorage.getItem("dataArray"));
   const usernameOrEmail = document.getElementById("email-input").value;
