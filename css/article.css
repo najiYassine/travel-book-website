@@ -13,14 +13,14 @@ body {
   width: 95%;
   margin: 40px auto;
 
-  display: flex;               /* changed */
+  display: flex;               
   gap: 30px;
-  align-items: flex-start;     /* added */
+  align-items: flex-start;     
 }
 
 .aside {
-  width: 250px;                /* added */
-  flex-shrink: 0;              /* added */
+  width: 250px;                
+  flex-shrink: 0;              
 
   display: flex;
   flex-direction: column;
@@ -62,12 +62,11 @@ h2 {
 }
 
 .section {
-  flex: 1;                     /* added */
-
+  flex: 1;                     
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-content: flex-start;   /* added */
+  align-content: flex-start;   
   gap: 10px;
 }
 
