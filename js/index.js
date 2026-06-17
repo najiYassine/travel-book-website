@@ -1,7 +1,7 @@
 function gtstr() {
-    window.location.href = "inner_html/login.html";
+    window.location.href = "register.php";
 }
 
 function extra() {
-    window.location.href = "about.html";
+    window.location.href = "about.php";
 }

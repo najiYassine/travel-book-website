@@ -1,0 +1,106 @@
+.panier-page {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.panier-page h1 {
+    color: var(--color-text);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.panier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.panier-table th,
+.panier-table td {
+    border: 1px solid var(--color-border);
+    padding: 12px;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.panier-table th {
+    background-color: var(--color-bg-secondary);
+}
+
+.panier-table img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.panier-total {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--color-text);
+    margin: 20px 0;
+}
+
+.panier-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.btn-panier {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-panier-primaire {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-panier-secondaire {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+.btn-panier-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-panier-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.panier-vide {
+    text-align: center;
+    padding: 40px;
+    color: var(--color-text);
+}
+
+.message-succes {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.quantite-input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}

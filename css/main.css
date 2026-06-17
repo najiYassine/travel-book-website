@@ -223,3 +223,9 @@ html[data-theme="dark"] .nav-buttons a:focus-visible img {
 .nav-buttons button svg:nth-of-type(2) {
   display: block;
 }
+
+.nav-user {
+  color: var(--color-text);
+  font-size: 0.9em;
+  padding: 0 8px;
+}
