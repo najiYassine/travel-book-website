@@ -3,7 +3,6 @@ require_once 'includes/init.php';
 
 $pageTitle = 'Accueil';
 $extraCss = ['css/index.css'];
-$extraJs = ['js/index.js'];
 
 require_once 'includes/header.php';
 ?>
@@ -18,11 +17,11 @@ require_once 'includes/header.php';
             </p>
             <div class="boutons">
                 <?php if (estConnecte()): ?>
-                    <button onclick="window.location.href='destinations.php'">Voir les destinations</button>
+                    <a href="destinations.php">Voir les destinations</a>
                 <?php else: ?>
-                    <button onclick="gtstr()">rejoignez-nous</button>
+                    <a href="register.php">rejoignez-nous</a>
                 <?php endif; ?>
-                <button onclick="extra()" class="bouton-simple">En savoir plus</button>
+                <a href="about.php" class="bouton-simple">En savoir plus</a>
             </div>
         </div>
         <div class="image">
